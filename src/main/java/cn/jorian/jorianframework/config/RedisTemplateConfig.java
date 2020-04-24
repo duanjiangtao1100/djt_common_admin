@@ -14,7 +14,7 @@ import org.springframework.stereotype.Component;
  * 集群下启动session共享，需打开@EnableRedisHttpSession<br>
  * 单机下不需要
  *
- * @author jorian
+ * @author djt
  *
  *  2019年3月10日
  */

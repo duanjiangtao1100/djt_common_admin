@@ -15,7 +15,7 @@ import java.util.List;
  *  服务类
  * </p>
  *
- * @author jorian
+ * @author djt
  * @since 2019-05-07
  */
 public interface LogService extends IService<SysLog> {

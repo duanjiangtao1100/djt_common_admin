@@ -3,7 +3,7 @@ package cn.jorian.jorianframework.common.model;
 import lombok.Data;
 
 /**
- * author:jorian
+ * author:djt
  */
 @Data
 public abstract class PageDTO {

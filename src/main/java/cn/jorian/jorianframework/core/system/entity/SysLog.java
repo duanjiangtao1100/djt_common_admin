@@ -12,7 +12,7 @@ import java.time.LocalDateTime;
  *
  * </p>
  *
- * @author jorian
+ * @author djt
  * @since 2019-05-07
  */
 @Data

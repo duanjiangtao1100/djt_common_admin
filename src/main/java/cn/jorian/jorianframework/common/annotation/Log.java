@@ -3,7 +3,7 @@ package cn.jorian.jorianframework.common.annotation;
 import java.lang.annotation.*;
 
 /**
- * @author jorian
+ * @author djt
  * @version 2019/4/27/17:36
  * 系统日志
  */

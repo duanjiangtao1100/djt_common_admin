@@ -5,7 +5,7 @@ import lombok.Data;
 import javax.validation.constraints.NotBlank;
 
 /**
- * @author: jorian
+ * @author: djt
  * @date: 2019/10/30 16:52
  * @description: this is the class description
  */
