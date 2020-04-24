@@ -32,7 +32,7 @@ public class MybatisPlusGeneratorConfig {
         generator.setGlobalConfig(gc);
         // 数据源配置
         DataSourceConfig dsc = new DataSourceConfig();
-        dsc.setUrl("jdbc:mysql://localhost:3306/jorian_framework?useUnicode=true&useSSL=false&characterEncoding=utf8");
+        dsc.setUrl("jdbc:mysql://localhost:3306/jorain?useUnicode=true&useSSL=false&characterEncoding=utf8");
         // dsc.setSchemaName("public");
         dsc.setDriverName("com.mysql.jdbc.Driver");
         dsc.setUsername("root");
@@ -98,13 +98,13 @@ public class MybatisPlusGeneratorConfig {
         strategy.setNaming(NamingStrategy.underline_to_camel);
         strategy.setColumnNaming(NamingStrategy.underline_to_camel);
         strategy.setSuperEntityClass("cn.jorian.jorianframework.common.model.BaseModel");//设置父实体类
-        String [] superEntityColumns = {"createTime","updateTime"};
+        String [] superEntityColumns = {"createTime","updateTime","id"};
         strategy.setSuperEntityColumns(superEntityColumns);
         strategy.setEntityLombokModel(true);
         strategy.setRestControllerStyle(true);
         //strategy.setSuperControllerClass("cn.jorian.jorianframework.common.controller.controller;");//设置父Controller
       /*  String [] tableName = {"t_mail","t_mail_to"};*/
-        String [] tableName = {"info"};
+        String [] tableName = {"product"};
         strategy.setInclude(tableName);
         strategy.setControllerMappingHyphenStyle(true);
         strategy.setTablePrefix(pc.getModuleName() + "_");
