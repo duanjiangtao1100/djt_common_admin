@@ -6,7 +6,7 @@ import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 
 /**
- * @Auther: jorian
+ * @Auther: djt
  * @Date: 2019/4/17 14:23
  * @Description:
  */

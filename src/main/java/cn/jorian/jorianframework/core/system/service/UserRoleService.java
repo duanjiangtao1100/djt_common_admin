@@ -4,7 +4,7 @@ import cn.jorian.jorianframework.core.system.entity.SysUserRole;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
- * @Auther: jorian
+ * @Auther: djt
  * @Date: 2019/4/18 15:54
  * @Description:
  */

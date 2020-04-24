@@ -13,7 +13,7 @@ import lombok.experimental.Accessors;
  *
  * </p>
  *
- * @author jorian
+ * @author djt
  * @since 2019-10-30
  */
 @Data

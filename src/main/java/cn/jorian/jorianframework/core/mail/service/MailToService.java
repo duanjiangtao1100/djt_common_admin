@@ -8,7 +8,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  *  服务类
  * </p>
  *
- * @author jorian
+ * @author djt
  * @since 2019-10-30
  */
 public interface MailToService extends IService<MailTo> {

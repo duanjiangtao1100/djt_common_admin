@@ -13,7 +13,7 @@ import java.util.List;
  *
  * </p>
  *
- * @author jorian
+ * @author djt
  * @since 2019-04-24
  */
 @Data

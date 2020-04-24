@@ -68,28 +68,12 @@ public class MybatisPlusGeneratorConfig {
                         + "/" + tableInfo.getEntityName() + "Mapper" + StringPool.DOT_XML;
             }
         });
-        /*
-        cfg.setFileCreate(new IFileCreate() {
-            @Override
-            public boolean isCreate(ConfigBuilder configBuilder, FileType fileType, String filePath) {
-                // 判断自定义文件夹是否需要创建
-                checkDir("调用默认方法创建的目录");
-                return false;
-            }
-        });
-        */
+
         cfg.setFileOutConfigList(focList);
         generator.setCfg(cfg);
 
         // 配置模板
         TemplateConfig templateConfig = new TemplateConfig();
-
-        // 配置自定义输出模板
-        //指定自定义模板路径，注意不要带上.ftl/.vm, 会根据使用的模板引擎自动识别
-        // templateConfig.setEntity("templates/entity2.java");
-        // templateConfig.setService();
-        // templateConfig.setController();
-
         templateConfig.setXml(null);
         generator.setTemplate(templateConfig);
 
@@ -102,14 +86,11 @@ public class MybatisPlusGeneratorConfig {
         strategy.setSuperEntityColumns(superEntityColumns);
         strategy.setEntityLombokModel(true);
         strategy.setRestControllerStyle(true);
-        //strategy.setSuperControllerClass("cn.jorian.jorianframework.common.controller.controller;");//设置父Controller
-      /*  String [] tableName = {"t_mail","t_mail_to"};*/
         String [] tableName = {"product"};
         strategy.setInclude(tableName);
         strategy.setControllerMappingHyphenStyle(true);
         strategy.setTablePrefix(pc.getModuleName() + "_");
         generator.setStrategy(strategy);
-        //generator.setTemplateEngine(new FreemarkerTemplateEngine());//非默认引擎需设置
         generator.execute();
 
 
