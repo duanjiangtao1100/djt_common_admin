@@ -76,7 +76,7 @@ public class AccountServiceImpl  extends ServiceImpl<UserMapper,SysUser> impleme
                 throw new ServiceException(ResponseCode.TOKEN_AUTHENTICATION_FAIL);
             }
         }catch (DisabledAccountException e){
-            throw new ServiceException(ResponseCode.SIGN_IN_FAIL);
+            throw new ServiceException(ResponseCode.SIGN_IN_USERNAME_PASSWORD_FAIL);
         }catch (Exception e){
             throw new ServiceException(ResponseCode.SIGN_IN_FAIL);
         }

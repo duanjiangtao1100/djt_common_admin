@@ -1,4 +1,4 @@
-package cn.jorian.jorianframework.core.product.ProductDTO;
+package cn.jorian.jorianframework.core.product.dto;
 
 import cn.jorian.jorianframework.common.model.BaseModel;
 import cn.jorian.jorianframework.common.model.PageDTO;
@@ -20,9 +20,8 @@ import lombok.experimental.Accessors;
 public class ProductDTO extends PageDTO {
 
     private static final long serialVersionUID = 1L;
-
+    private  String id;
     private String name;
-
     private Double price;
 
 }

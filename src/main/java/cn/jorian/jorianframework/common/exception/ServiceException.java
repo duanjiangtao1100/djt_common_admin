@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 import java.io.Serializable;
 
 /**
- * @Author: jorian
+ * @Author: djt
  * @Date: 2019/4/17 09:30
  * @Description:
  */
@@ -40,7 +40,5 @@ public class ServiceException extends RuntimeException implements Serializable{
     public ServiceException(String message, Throwable e, boolean enableSuppression, boolean writableStackTrace){
         super(message,e,enableSuppression,writableStackTrace);
     }
-
-
 
 }
